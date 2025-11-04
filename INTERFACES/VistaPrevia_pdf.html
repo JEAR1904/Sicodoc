@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SICODOC - Visor PDF</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+          <img src="/images/logo_blanco.png" alt="Logo TecNM" class="logo"> 
+        </div>
+         <span>SICODOC</span>
+        <button id="back-button">Atras</button>
+  </header>
+
+  <!-- SUBTÍTULO -->
+  <div class="viewer-subtitle">
+    <h3 id="doc-name">2.3.4.1. Asesoría por proyecto de residencia profesional</h3>
+  </div>
+
+  <!-- BARRA DE HERRAMIENTAS -->
+  <div class="viewer-toolbar">
+    <button id="prev">◀</button>
+    <span id="page-num">1</span> / <span id="page-count">1</span>
+    <button id="next">▶</button>
+    <button id="zoom-out">−</button>
+    <button id="zoom-in">+</button>
+    <button id="rotate">⟳</button>
+    <button id="download">💾</button>
+    <button id="print">🖨️</button>
+  </div>
+
+  <!-- CANVAS PDF -->
+  <div class="pdf-container">
+    <canvas id="pdf-render"></canvas>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="viewer-footer">
+    <div class="footer-logos">
+      <img src="/images/logofoot.png" alt="Logo TecNM">
+      <p>&copy; Copyright 2025 TecNM - Todos los Derechos Reservados.<br>
+      Secretaría Académica, de Investigación e Innovación /
+      Dirección de Docencia e Innovación Educativa<br>
+      Plataforma SICODOC 1.0.</p>
+      <img src="/images/estado.png" alt="Logo Gobierno">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
